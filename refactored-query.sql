@@ -37,7 +37,7 @@ group by completed_at_date ),
 
 final as (
        select
-       a.completed_at_date,
+       a.completed_at_date as completed_date,
        a.gross_rev,
        a.net_rev, b.qty,
        a.order_count as orders,
